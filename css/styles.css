@@ -1,0 +1,1137 @@
+body {
+
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+nav li {
+
+    margin: 20px;
+    background-color: rgb(5, 5, 46);
+    padding: 20px;
+
+}
+
+nav {
+
+    background-color: rgb(5, 5, 46);
+    min-height: 100px;
+    
+
+
+}
+
+.navcontainer {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+nav li a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+
+}
+
+h1 {
+
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-image: url("../images/stars2.png");
+    background-color: black;
+    padding: 60px;
+    font-family: 'Space Grotesk', sans-serif;
+    
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+#main {
+
+
+    margin-left: 75px;
+    margin-right: 75px;
+    text-align: center;
+
+}
+
+
+.rocketanimation {
+    width: 100%;
+    margin-top: 50px;
+    background-color: black;
+    border-radius: 20px;
+
+}
+
+.horizon {
+    border: none;
+    padding: none;
+    width: 100%;
+    margin: auto;
+}
+
+.horizon:hover {
+
+    border: none;
+    transition: none;
+
+}
+
+.rocket {
+
+    border: none;
+    padding: none;
+    margin: auto;
+    width: 15%;
+    display: block;
+
+}
+
+.rocket:hover {
+
+    border: none;
+    transition: none;
+
+}
+
+.bounce {
+
+    animation-name: bounce;
+    animation: bounce 2.5s infinite;
+
+}
+
+.quote {
+    text-align: center;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.larger {
+    font-size: 30px;
+    padding: 50px;
+    line-height: 50px;
+}
+
+@keyframes bounce {
+
+    0%, 20%, 50%, 80%, 100% {transform: translateY(30px);} 
+   40% {transform: translateY(-20px);} 
+   60% {transform: translateY(-20px);} 
+} 
+
+
+.agencycontainer {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 20px;
+    padding: 20px;
+
+}
+
+
+.socialcontainer {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    /* border: 5px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+  }
+  
+  
+  .flip-card-back {
+    background-color:navy;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card.focuswithin .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+
+.private_agency img {
+
+    border: 10px solid navy;
+    padding: none;
+    height: 250px;
+
+  }
+
+.private_agency {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.padding {
+    padding-bottom: 5px;
+}
+
+
+.private_agency img:hover{
+
+    border: 3px solid navy;
+    transition: none;
+
+}
+
+.private_agency img {
+    /* position: relative; */
+    border: 3px solid lightgray;
+    border-radius: 4px;
+    padding: 5px;
+    width: 250px;
+    
+
+  }
+
+  .agencycontainer img {
+
+    width: 200px;
+    border: 3px solid lightgray;
+    border-radius: 4px;
+
+  }
+
+.agencycontainer img:hover {
+
+    border: 5px dashed rgb(5, 5, 46);
+    transition: 0.5s ease-in-out;
+
+
+    }
+
+    
+
+.welcome {
+    /* border: solid 10px lightskyblue; */
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 75px;
+    margin-right: 75px;
+    /* margin-bottom: 30px; */
+}
+
+
+
+.fa-meteor {
+    
+   color: navy;
+   margin-bottom: 30px;
+   margin-top: 40px;
+    
+}
+
+.fa-shuttle-space {
+
+    margin-top: 40px;
+   color: navy;
+
+}
+
+.fa-user-astronaut {
+    margin-top: 40px;
+   color: navy;
+
+}
+
+.full img{
+    width: 100%;
+    animation: none;
+    border: none;
+    margin-top: 40px;
+    padding: none;
+   
+}
+
+.parallax {
+    background-image: url("../images/astronaut.jpg");
+    background-attachment: scroll;
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#smaller {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.welcome img {
+    width: 100%;
+
+}
+
+
+.active {
+
+    border: lightgrey solid 4px;
+    font-weight: bolder;
+    font-size: larger;
+    color: cornsilk;
+    text-decoration: underline;
+    
+
+}
+
+.item {
+    align-self: center;
+}
+
+.skip {
+
+    font-size: 20px;
+    background: #e77e23;
+    height: 30px;
+    left: 50%;
+    padding: 8px;
+    position: absolute;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+
+  
+  .skip:focus {
+    transform: translateY(0%);
+  }
+
+footer {
+
+  
+    background-color: rgb(5, 5, 46);
+    padding-bottom: 20px;
+    color: white;    
+    
+}
+
+footer a {
+    color: white;
+}
+
+
+footer p {
+
+    padding-top: 10px;
+    text-align: center;
+    /* margin-left: 10px; */
+}
+
+
+.footer_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div {
+    margin: auto;
+}
+.gap {
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container div {
+    
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.container div img {
+  
+    border: 0px;
+    padding: 20px;
+    background-color: navy;
+}
+
+figcaption {
+
+    
+    /* background-color: blue; */
+    padding-top: 10px;
+    padding-bottom: 30px;
+    width: 290px;
+    margin: auto;
+
+    
+
+}
+
+form {
+
+    margin-left: 75px;
+    margin-bottom: 75px;
+    margin-top: 75px;
+
+}
+
+.resource_container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    
+
+}
+
+.podcast_header {
+
+    grid-row: 2 / 3;
+
+}
+
+.awty_img {
+
+    grid-row: 3 / 4;
+}
+
+.awty_description {
+
+    grid-row: 4 / 5;
+
+}
+
+.isro_img {
+
+    grid-row: 5 / 6;
+
+}
+
+.isro_description {
+
+    grid-row: 6 / 7;
+}
+
+
+.nasa_img {
+    grid-row: 7 / 8;
+}
+
+.nasa_description {
+    grid-row: 8 / 9;
+}
+
+.book_header {
+
+    grid-row: 9 / 10;
+
+}
+
+.ndt_img {
+    grid-row: 10 / 11;
+}
+
+.ndt_description {
+    grid-row: 11 / 12;
+}
+
+.sally_img {
+    grid-row: 12 / 13;
+}
+
+.sally_description {
+    grid-row: 13 / 14;
+}
+
+.women_in_space_img {
+    grid-row: 14 / 15;
+}
+
+.women_in_space_description {
+    grid-row: 15 / 16;
+}
+
+.movie_header {
+
+    grid-row: 16 / 17;
+
+
+}
+
+.cosmos_img {
+    grid-row: 17 / 18;
+}
+
+.cosmos_description {
+    grid-row: 18 / 19;
+}
+
+.hiddenfigures {
+    grid-row: 19 / 20;
+}
+
+.hf_description {
+    grid-row: 20 / 21;
+}
+
+.resource_nav {
+
+    grid-row: 1 / 2;
+    text-align: center;
+    height: 100%;
+    padding-right: 20px;
+    border-right: navy solid 3px;
+
+}
+
+.resource_header {
+
+    width: 200px;
+    font-size: 40px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    
+  }
+
+  .backtotop {
+
+    font-size: 10px;
+  }
+
+  .resource_description {
+
+    
+    background-color: navy;
+    padding: 20px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    color: white;
+    
+
+}
+
+.resource_nav p {
+
+    background-color: white;
+    color: navy;
+    border: 3px navy solid;
+    padding: 30px;
+    margin: 5px;
+    font-size: larger;
+
+
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+    
+    }
+  
+    to { 
+      margin-left: 50px;
+      
+    }
+  }
+
+  .animate {
+    margin-left: 50px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+
+  .animatetwo {
+    margin-left: 50px;
+  }
+
+  .btn {
+      margin-bottom: 10px;
+      margin-left: 150px;
+  }
+
+  #clicked-feedback {
+
+    margin-left:50px;
+  }
+
+
+
+  @media only screen and (min-width: 820px) {
+
+    nav li a {
+
+        font-size: 30px;
+    
+    }
+    
+
+    .parallax {
+
+        background-image: url("../images/astronaut.jpg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .socialmedia {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+
+    .container {
+
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 20px;
+        column-gap: 20px;
+
+    }
+
+
+    #date {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .items {
+
+        background-color: white;
+        align-self: center;
+
+    }
+
+    .resource_container {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .resource_nav {
+
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+
+    }
+
+    .nasacontent, .esacontent, .isrocontent, .chinacontent, .roscosmos {
+        background-color: white;
+        /* margin: 30px; */
+        border: 3px solid navy;
+        padding: 20px;
+        /* height: 250px; */
+        overflow: scroll;
+        justify-items: stretch;
+    }
+
+    .backtotop {
+
+        visibility: hidden;
+    }
+
+    .podcast_header {
+
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .awty_img {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .awty_description {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .isro_img {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .isro_description {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .nasa_img {
+
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .nasa_description {
+
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+    }
+
+    .book_header {
+
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+    }
+
+    .ndt_img {
+
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+    }
+
+    .ndt_description {
+
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+    }
+
+    .sally_img {
+
+        grid-column: 3 / 4;
+        grid-row: 7 / 8;
+    }
+
+    .sally_description {
+
+        grid-column: 3 / 4;
+        grid-row: 8 / 9;
+    }
+
+    .women_in_space {
+
+        grid-column: 2 / 3;
+        grid-row: 9 / 10;
+    }
+
+    .women_in_space_description {
+
+        grid-column: 2 / 3;
+        grid-row: 10 / 11;
+    }
+
+    .movie_header {
+        grid-column: 2 / 3;
+        grid-row: 11 / 12;
+    }
+
+    .cosmos {
+
+        grid-column: 2 / 3;
+        grid-row: 12 / 13;
+    }
+
+    .cosmos_description {
+
+        grid-column: 2 / 3;
+        grid-row: 13 / 14;
+    }
+
+    .hiddenfigures {
+
+        grid-column: 3 / 4;
+        grid-row: 12 / 13;
+    }
+
+    .hf_description {
+
+        grid-column: 3 / 4;
+        grid-row: 13 / 14;
+    }
+
+    .agencycontainer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        row-gap: 20px;
+
+    }
+
+    .agencycontainer p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+
+    .nasaimg {
+
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+    }
+
+    .nasacontent {
+
+        grid-column: 2 / 4;
+
+    }
+
+
+    .socialcontainerone {
+
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        justify-content: space-evenly;
+        background-color: navy;
+    
+    }
+
+    .esaimg {
+
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .esacontent {
+
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .socialcontainertwo {
+
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+        justify-content: space-evenly;
+        background-color: navy;
+    
+    }
+
+    .cnsaimg {
+
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+
+
+    }
+
+    .chinacontent {
+
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+
+
+    }
+
+    .socialcontainerthree {
+
+        grid-column: 2 / 3;
+        grid-row: 6 / 7;
+        background-color: navy;
+
+
+    }
+
+    .isroimg {
+
+        grid-column: 1 / 2;
+        grid-row: 7 / 8;
+
+    }
+
+    .isrocontent {
+
+        grid-column: 2 / 4;
+        grid-row: 7 / 8;
+
+
+    }
+
+    .socialcontainerfour {
+
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+        background-color: navy;
+    }
+
+    .roscosmosimg {
+
+        grid-column: 1 / 2;
+        grid-row: 9 / 10;
+    }
+
+    .roscosmos {
+
+        grid-column: 2 / 4;
+        grid-row: 9 / 10;
+    }
+
+    .socialcontainerfive {
+
+        grid-column: 2 / 3;
+        background-color: navy;
+        grid-row: 10 / 11;
+    }
+
+    .socialcontainer i {
+        color: white;
+    }
+    
+
+
+
+  }
+
+  @media only screen and (min-width: 1280px) {
+
+
+    .container {
+
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        
+
+    }
+
+    .items {
+        align-self: flex-end;
+        
+    }
+
+    .resource_container {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
+    .resource_nav {
+
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background-color: white;
+        
+    }
+
+   
+
+    .podcast_header {
+
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .awty_img {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .awty_description {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .isro_img {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+
+    .isro_description {
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .nasa_img {
+
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .nasa_description {
+
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+    }
+
+    .book_header {
+
+        grid-column: 3 / 4;
+        grid-row: 6 / 7;
+    }
+
+    .ndt_img {
+
+        grid-column: 2 / 3;
+        grid-row: 7 / 8;
+    }
+
+    .ndt_description {
+
+        grid-column: 2 / 3;
+        grid-row: 8 / 9;
+    }
+
+    .sally_img {
+
+        grid-column: 3 / 4;
+        grid-row: 7 / 8;
+    }
+
+    .sally_description {
+
+        grid-column: 3 / 4;
+        grid-row: 8 / 9;
+    }
+
+    .women_in_space {
+
+        grid-column: 4 / 5;
+        grid-row: 7 / 8;
+    }
+
+    .women_in_space_description {
+
+        grid-column: 4 / 5;
+        grid-row: 8 / 9;
+    }
+
+    .movie_header {
+        grid-column: 3 / 4;
+        grid-row: 11 / 12;
+    }
+
+    .cosmos {
+
+        grid-column: 2 / 3;
+        grid-row: 12 / 13;
+    }
+
+    .cosmos_description {
+
+        grid-column: 2 / 3;
+        grid-row: 13 / 14;
+    }    
+
+    .hiddenfigures {
+
+        grid-column: 3 / 4;
+        grid-row: 12 / 13;
+    }
+
+    .hf_description {
+
+        grid-column: 3 / 4;
+        grid-row: 13 / 14;
+    }
+
+    .agencycontainer img{
+
+        width: 300px;
+
+    }
+
+
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    .bounce {
+
+        animation: none;
+
+    }
+  
+      .flip-card-inner {
+        transition: transform 0.000000000001s;
+      }
+
+      .parallax {
+
+        background-image: url("../images/astronaut.jpg");
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+      }
+
+
+  }
+  
+  
+
+
+
+
+
+
+
