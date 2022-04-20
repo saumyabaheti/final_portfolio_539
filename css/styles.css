@@ -183,7 +183,7 @@ h3 {
     transform-style: preserve-3d;
   }
 
-  .flip-card:hover .flip-card-inner {
+  .flip-card:hover .flip-card-inner .flip-card:focus-within {
     transform: rotateY(180deg);
   }
 
@@ -207,9 +207,7 @@ h3 {
     transform: rotateY(180deg);
   }
   
-  .flip-card.focuswithin .flip-card-inner{
-    transform: rotateY(180deg);
-}
+   
 
 
 .private_agency img {
